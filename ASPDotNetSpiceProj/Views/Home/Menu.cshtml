@@ -1,0 +1,114 @@
+﻿@model ASPDotNetSpiceProj.ViewModels.MenuViewModel
+@{
+    ViewBag.Title = "Menu";
+}
+
+<body style="background-color:burlywood">
+    
+        
+
+        <div class="text-center">
+            <h2 style="color:crimson">Welcome To Spice Restaurant</h2>
+        </div>
+
+        <br />
+
+
+        <div class="text-center">
+            <a href="/Home/Menu" class="btn btn-primary">Show All</a>
+            <a href="/Home/GetMenuItem?name=Apetizer" class="btn btn-primary">Apetizer</a>
+            <a href="/Home/GetMenuItem?name=Main Course" class="btn btn-primary">MainCourse</a>
+            <a href="/Home/GetMenuItem?name=Desert" class="btn btn-primary">Desert</a>
+            <a href="/Home/GetMenuItem?name=Beverages" class="btn btn-primary">Beverages</a>
+
+        </div>
+
+
+        <br />
+        <br />
+
+        <div class="backgroundWhite container" style="border-color:black;">
+
+            <table class="table ">
+
+                @foreach (var item in Model.MenuItem)
+                {
+                <tr>
+
+                    <td>
+                        @*<img src="data:img;base64,@item.MImage" />*@
+
+                        <img src="@Url.Content(item.MImage)" style="width:200px; height:auto" />
+                        @*<img src="~/Images/papdichat.jpg" />*@
+
+                        @*@Html.DisplayFor(m => item.MImage)*@
+                    </td>
+
+                    <td style="width:200px">
+                        <div>
+                            @*<i style="color: Green;" class="fas fa-pepper-hot"></i>*@
+                            <h3 style="color:darkblue">
+                                @Html.DisplayFor(m => item.MenuName)
+                                @if (item.Spicyness == "Spicy")
+                                {
+                                    <i style="color: orangered;" class="fas fa-pepper-hot" title="@item.Spicyness"></i>}
+                                @if (item.Spicyness == "Very Spicy")
+                                {
+                                    <i style="color: Red;" class="fas fa-pepper-hot" title="@item.Spicyness"></i>}
+                                @if (item.Spicyness == " Not Spicy")
+                                {
+                                    <i style="color:Green;" class="fas fa-pepper-hot" title="@item.Spicyness"></i>}
+                            </h3>
+                            @*<h4 style="color:darkblue">
+            @Html.DisplayFor(m => item.Name)
+        </h4>*@
+                        </div>
+                </td>
+
+
+
+                <td>
+                    <h4 style="color:crimson">
+                        @Html.DisplayFor(m => item.MenuName)
+                    </h4>
+                </td>
+
+                <td>
+                    @Html.DisplayFor(m => item.Description)
+                </td>
+
+                <td>
+                    <h4 style="color:crimson">
+                        @*@String.Format("{0:C}",item.Price)*@
+
+                        $@item.Price
+                        @*@Html.DisplayFor(m => item.Price)*@
+                    </h4>
+                </td>
+
+                <td>
+                    @*<a href="/Home/Details" class="btn btn-success">Details</a>*@
+
+                    @*<a href="/Home/Index" class="btn btn-success">Details</a>*@
+
+                    @*@Html.ActionLink("Details", "Details", new { id = item.CategoryId}, "Home")*@
+
+                    @Html.ActionLink("Details", "Details", "Home", new { id = item.MenuItemId }, new { @class = "btn btn-primary" })
+
+                </td>
+                </tr>
+
+                }
+            </table>
+            @*</ul>*@
+
+            @*@foreach (var category in Model.Category)
+                {
+                    <div class="row" id="menu-wrapper">
+                        <partial name="_ThumbnailAreaPartial" model="@Model.MenuItem.Where(u=>u.Category.CName.Equals(category.CName))" />
+                    </div>
+                }*@
+
+
+        </div>
+    </body>

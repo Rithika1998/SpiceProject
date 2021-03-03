@@ -1,0 +1,17 @@
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\SpicePro.DataLayer.dll.config
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\SpicePro.DataLayer.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\SpicePro.DataLayer.pdb
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\EntityFramework.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\SpicePro.DomainModels.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\SpicePro.DomainModels.pdb
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\SpicePro.DomainModels.dll.config
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\EntityFramework.xml
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.csprojAssemblyReference.cache
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.csproj.CoreCompileInputs.cache
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.csproj.CopyComplete
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.pdb
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.Migrations.Addmigrationsformodelclasses.resources
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DataLayer\obj\Debug\SpicePro.DataLayer.csproj.GenerateResource.cache

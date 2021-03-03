@@ -1,0 +1,11 @@
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\SpicePro.DomainModels.dll.config
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\SpicePro.DomainModels.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\SpicePro.DomainModels.pdb
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\EntityFramework.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\EntityFramework.xml
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\obj\Debug\SpicePro.DomainModels.csproj.CoreCompileInputs.cache
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\obj\Debug\SpicePro.DomainModels.csproj.CopyComplete
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\obj\Debug\SpicePro.DomainModels.dll
+D:\.NETbatchjan2021\ConsoleAssignments\SpiceProj\ASPDotNetSpiceProj\SpicePro.DomainModels\obj\Debug\SpicePro.DomainModels.pdb

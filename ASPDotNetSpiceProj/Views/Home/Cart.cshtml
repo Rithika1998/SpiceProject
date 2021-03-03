@@ -1,0 +1,94 @@
+﻿@model IEnumerable<SpicePro.DomainModels.ShoppingCart>
+
+@{
+    ViewBag.Title = "Cart";
+}
+
+<body style="background-color:burlywood">
+
+    @*<h2>@ViewBag.Title.</h2>*@
+
+ <br/>
+    <h3 style="color:crimson">@ViewBag.Message</h3>
+
+    <br/>
+    <div class="col-25">
+        @{ double bag = 0;
+        }
+
+        @*@{ double Total = 0; }*@
+        @foreach (var item in Model)
+        {
+            double Total = 0;
+
+            <img src="@Url.Content(item.MenuItem.MImage)" style="width:300px; height:auto;border-radius:50px" />
+
+            <h4>
+                <p style="color:crimson">@item.MenuItem.MenuName</p>
+            </h4>
+
+            <h5>
+                <p style="color:black">@item.MenuItem.Description</p>
+            </h5>
+
+            <h4>
+                <p style="color:crimson">Price: $@item.MenuItem.Price</p>
+
+            </h4>
+
+            <h3>
+                <p style="color:maroon">Count: @item.Count</p>
+            </h3>
+            {
+                Total = (Total + item.MenuItem.Price) * item.Count;
+            }
+
+            @*<p>
+
+                <a href="#" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                </a>
+            </p>*@
+
+            <p>
+
+                <a href="~/Home/PlusItems?cartId=@item.ShoppingId" type="submit" class="btn btn-info"><i class="fas fa-plus-square"></i></a>
+
+                <a href="~/Home/MinusItems?cartId=@item.ShoppingId" type="submit" class="btn btn-info"><i class="fas fa-minus-square"></i></a>
+
+                <a href="~/Home/Delete?cartId=@item.ShoppingId" type="submit" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+
+             
+            </p>
+
+            @*<p>
+                <a href="~/Home/PlusItems?cartId=@item.ShoppingId" type="submit" class="btn btn-info"><i class="fas fa-plus-square"></i></a>
+            </p>
+
+            <p>
+                <a href="~/Home/MinusItems?cartId=@item.ShoppingId" type="submit" class="btn btn-info"><i class="fas fa-minus-square"></i></a>
+            </p>*@
+
+            @*<a href="~/Home/PlusItems?cartId==@item.ShoppingId" class="fa fa-plus plusIcon"></a>*@
+
+            //href = "@Url.Action("PlusItems","Home",new { ShoppingId=item.MenuItemId})
+
+            @*@Html.ActionLink("Add", "PlusItems", "Home", new { shoppingId=item.MenuItemId})*@
+            bag = bag + Total;
+
+        }
+
+
+        <div>
+            <h3>
+                Total: $@bag
+            </h3>
+        </div>
+        <br />
+        <br />
+
+        @Html.ActionLink("Back To Menu", "Menu", "Home", new { @class = "btn btn-primary" })
+
+        @Html.ActionLink("Check Your Order", "OrderSummary", "Home", new { @class = "btn btn-primary" })
+    </div>
+    </body>
